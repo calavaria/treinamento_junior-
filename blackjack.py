@@ -75,7 +75,7 @@ while(continuar == "sim") :
         else :
             resposta = input("Quer mais cartas? ")
     soma2 = dealer.soma()
-    print("Cartas da banca:" , dealer.cartas)
+    print("Cartas da mesa:" , dealer.cartas)
     if(soma > 21 ) :
         print("A banca ganhou!!")
         carteira -= aposta
