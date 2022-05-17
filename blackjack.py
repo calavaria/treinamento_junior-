@@ -99,8 +99,8 @@ while(continuar == "sim") :
                 soma2 += 1
             else :
                 soma2 += nova_carta
-            print("Na banca :", soma)
-        if(soma2 <= 21 and soma2 != soma) :
+            print("Na banca :", soma2)
+        if(soma2 <= 21) :
             print("A banca ganhou!!")
             carteira -= aposta
             print("Agora você está com" , carteira , "fichas")
