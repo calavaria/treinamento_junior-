@@ -45,7 +45,7 @@ while(continuar == "sim") :
     dealer = Mao(cartas = [carta() , carta()])
     print("Suas cartas:" , jogador.cartas)
     print("Na mão:" , jogador.soma())
-    print("Cartas da banca:", dealer.cartas[0])
+    print("Cartas da mesa:", dealer.cartas[0])
     if(jogador.soma() == 21) :
         carteira += aposta
         print("Você ganhou!!")
@@ -104,10 +104,6 @@ while(continuar == "sim") :
             print("A banca ganhou!!")
             carteira -= aposta
             print("Agora você está com" , carteira , "fichas")
-        elif(soma2 == soma) :
-            print("Empate")
-            carteira += aposta/2
-            print("Você está com", carteira, "fichas.")
         else :
             print("Você ganhou!!")
             carteira += aposta
